@@ -1,11 +1,13 @@
-![New Logo](https://github.com/hendri2808/CDShop-Token/assets/67959601/34a64902-1089-4e13-82e3-10b788c6907c)
+![cdshop coin logo](https://github.com/hendri2808/CDShop-Token/assets/67959601/781a8284-c690-46f2-8ff7-b63f2f379a65)  ![heresa coin logo](https://github.com/hendri2808/CDShop-Token/assets/67959601/37b4b34b-9c80-4f09-a164-a0324ebdb8fd)
+
+
 
 # CDShop-Token
 Our CD Shop Token Solidity ETC
 
 **CDShop Smart Contract Read Me**
 
-Welcome to the CDShop Smart Contract repository! This document serves as a guide to understanding the functionality, deployment, and usage of the CDShop token smart contract on the Binance Smart Chain (BSC). 
+Welcome to the CDShop Smart Contract repository! This document serves as a guide to understanding the functionality, deployment, and usage of the token under ANR Group like CDShop token & HR$C token smart contract on the Binance Smart Chain (BSC). 
 
 ### Overview
 The CDShop token is a utility token designed to facilitate transactions within the CDShop ecosystem, primarily focusing on digital products such as unique image collections, digital art, and technological tools like software and scripts. 
