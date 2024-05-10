@@ -1,3 +1,5 @@
+![New Logo](https://github.com/hendri2808/CDShop-Token/assets/67959601/34a64902-1089-4e13-82e3-10b788c6907c)
+
 # CDShop-Token
 Our CD Shop Token Solidity ETC
 
