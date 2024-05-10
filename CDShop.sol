@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: MIT
+// Compatible with OpenZeppelin Contracts ^5.0.0
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts-upgradeable@5.0.2/token/ERC20/ERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@5.0.2/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@5.0.2/token/ERC20/extensions/ERC20FlashMintUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@5.0.2/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable@5.0.2/proxy/utils/UUPSUpgradeable.sol";
+
+/// @custom:security-contact hrahmat@anrworkgroup.com
+contract CDShop is Initializable, ERC20Upgradeable, OwnableUpgradeable, ERC20FlashMintUpgradeable, UUPSUpgradeable {
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() {
+        _disableInitializers();
+    }
+
+    function initialize(address initialOwner) initializer public {
+        __ERC20_init("CDShop", "CD$");
+        __Ownable_init(initialOwner);
+        __ERC20FlashMint_init();
+        __UUPSUpgradeable_init();
+
+        _mint(msg.sender, 1000000000000000000000000000 * 10 ** 18);
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function _authorizeUpgrade(address newImplementation)
+        internal
+        onlyOwner
+        override
+    {}
+}
